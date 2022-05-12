@@ -44,7 +44,7 @@ namespace ProseTutorial
         [FeatureCalculator(nameof(Semantics.CharAt))]
         public static double CharAt(double v, double s)
         {
-            return -1.0 / Math.Abs(s);
+            return 1.0 / Math.Abs(s);
         }
 
         [FeatureCalculator("rr", Method = CalculationMethod.FromLiteral)]
