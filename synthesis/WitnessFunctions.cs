@@ -52,9 +52,9 @@ namespace ProseTutorial
 				string output = example.Value as string;
 				var occurrences = new List<string>();
 
-				for (int i = 0; i <= input.Length; i++)
+				for (int i = 0; i <= output.Length; i++)
 				{
-					string s = input.Substring(i, i + 1);
+					string s = output.Substring(i, i + 1);  
 					occurrences.Add(s);
 				}
 
