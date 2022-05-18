@@ -1,4 +1,4 @@
-﻿using semantics ProseTutorial.Semantics;
+﻿﻿using semantics ProseTutorial.Semantics;
 using learners ProseTutorial.WitnessFunctions;
 
 language Substring;
@@ -7,10 +7,11 @@ language Substring;
 
 @input string v;
 
-@start string program := Concat(v, s, s) | s;
-string s:= Substring(v, pos, pos) | CharAt(v, pos);
+@start string program := Concat(v, s, program) | s;
+string s:= Substring(v, pos, pos) | CharAt(v, pos) | Const(v, constStr);
+
+string constStr;
 
 int pos := AbsPos(v, k) | RelPos(v, rr);
-
-int k; 
-Tuple<Regex,Regex> rr; 
+int k;
+Tuple<Regex,Regex> rr;

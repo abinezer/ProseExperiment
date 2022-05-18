@@ -10,6 +10,7 @@ namespace ProseTutorial
             return v.Substring(start, end - start);
         }
 
+
         public static int? AbsPos(string v, int k)
         {
             return k > 0 ? k - 1 : v.Length + k + 1;
@@ -20,10 +21,16 @@ namespace ProseTutorial
             return s1 + s2;
         }
 
+        public static string Const(string v, string s1)
+        {
+            return s1;
+        }
+
         public static string CharAt(string v, int s)
         {
             return v[s].ToString();
         }
+
 
         public static int? RelPos(string v, Tuple<Regex, Regex> rr)
         {
